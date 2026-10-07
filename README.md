@@ -37,6 +37,17 @@ Build a wheel:
 pip install build && python -m build
 ```
 
+## H100 walkthrough
+
+[`examples/h100_roofline.py`](examples/h100_roofline.py) walks through the model step by step
+(ridge point, roof, decode/prefill workloads) and draws the chart below with no dependencies:
+
+```bash
+PYTHONPATH=src python3 examples/h100_roofline.py
+```
+
+![H100 roofline](docs/h100_roofline.svg)
+
 ## Python API
 
 ```python
